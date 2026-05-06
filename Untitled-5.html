@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Безопасность MAX</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'Soyuz Grotesk';
+            src: local('Soyuz Grotesk'), local('Arial');
+            font-weight: 700;
+        }
+        @font-face {
+            font-family: 'Arkhit';
+            src: local('Arkhit'), local('Inter'), local('Arial');
+            font-weight: 400;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arkhit', 'Inter', Arial, sans-serif;
+            background-color: #3B3B3B;
+            color: #FCFAFA;
+            font-size: 18px;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        h1 {
+            font-family: 'Soyuz Grotesk', Arial, sans-serif;
+            color: #ECCACB;
+            font-size: 40px;
+            margin-bottom: 30px;
+            line-height: 1.2;
+        }
+        h2 {
+            font-family: 'Soyuz Grotesk', Arial, sans-serif;
+            color: #ECCACB;
+            font-size: 32px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        h3 {
+            font-family: 'Soyuz Grotesk', Arial, sans-serif;
+            color: #ECCACB;
+            font-size: 24px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .btn-home {
+            display: inline-block;
+            background-color: #ECCACB;
+            color: #3B3B3B;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 30px;
+            transition: opacity 0.2s;
+        }
+        .btn-home:hover {
+            opacity: 0.8;
+        }
+        .step {
+            background-color: rgba(255,255,255,0.05);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 15px 0;
+            border-left: 3px solid #ECCACB;
+        }
+        .step-number {
+            color: #ECCACB;
+            font-weight: 700;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .checklist {
+            background-color: rgba(255,255,255,0.05);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+        .checklist-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+        .checkbox {
+            width: 18px;
+            height: 18px;
+            border: 2px solid #ECCACB;
+            border-radius: 4px;
+            flex-shrink: 0;
+            margin-top: 3px;
+        }
+        .screenshot {
+            max-width: 320px;
+            width: 100%;
+            border-radius: 12px;
+            margin: 15px 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        .screenshots-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 28px; }
+            h2 { font-size: 24px; }
+            body { font-size: 16px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Безопасность MAX</h1>
+
+        <h2>О системе безопасности MAX:</h2>
+        <p>MAX использует единую систему безопасности с VK ID. Защита аккаунта MAX напрямую зависит от защиты вашего VK ID — при компрометации VK страдает и MAX.</p>
+
+        <h3>Ключевые элементы защиты:</h3>
+        <ul>
+            <li>Единый аккаунт VK ID для авторизации</li>
+            <li>Двухфакторная аутентификация через настройки VK</li>
+            <li>Контроль активных сеансов</li>
+            <li>Управление доступом сторонних приложений</li>
+        </ul>
+
+        <h2>Пошаговая инструкция: Как защитить аккаунт</h2>
+
+        <div class="step">
+            <div class="step-number">Шаг 1. Защитите VK ID</div>
+            <p>Поскольку MAX работает через VK ID, начните с полной защиты VK-аккаунта (см. раздел VK на нашем сайте). Включите 2FA, беспарольный вход или биометрию.</p>
+        </div>
+
+        <div class="step">
+            <div class="step-number">Шаг 2. Проверьте привязки в MAX</div>
+            <ol>
+                <li>Откройте приложение MAX</li>
+                <li>Профиль → Настройки → Аккаунт</li>
+                <li>Убедитесь, что привязан правильный VK ID и номер телефона</li>
+            </ol>
+        </div>
+
+        <div class="step">
+            <div class="step-number">Шаг 3. Проверьте активные сеансы</div>
+            <p>В настройках безопасности VK ID просмотрите устройства с доступом к MAX. Завершите сеансы на незнакомых устройствах.</p>
+        </div>
+
+        <div class="step">
+            <div class="step-number">Шаг 4. Настройте приватность профиля</div>
+            <ul>
+                <li>Видимость профиля: открытый / только контакты</li>
+                <li>Скрытие номера телефона от незнакомых пользователей</li>
+                <li>Ограничение статуса «в сети»</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <div class="step-number">Шаг 5. Пройдите квиз «Мошенник не пройдёт»</div>
+            <p>Встроенная функция в MAX для понимания основных схем обмана</p>
+        </div>
+
+        <h2>Индивидуальный чек-лист приватности:</h2>
+        <div class="checklist">
+            <div class="checklist-item"><div class="checkbox"></div><div>Пароль VK ID сложный и уникальный</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>2FA включена в настройках VK</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Активные сеансы проверены и очищены</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Подозрительные устройства удалены</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Сообщения от незнакомцев с ссылками игнорируются и блокируются</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Заявки в друзья от незнакомцев не принимаются без проверки</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>При взломе: сменить пароль VK ID, завершить все сессии, обратиться в поддержку MAX через приложение</div></div>
+        </div>
+
+        <div class="screenshots-row">
+            <img src="https://via.placeholder.com/320x568/4a4a4a/ECCACB?text=MAX+Screenshot+1" alt="MAX Screenshot" class="screenshot">
+        </div>
+
+        <a href="index.html" class="btn-home">← На главную</a>
+    </div>
+</body>
+</html>

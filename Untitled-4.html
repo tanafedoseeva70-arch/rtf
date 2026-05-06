@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Безопасность ВКонтакте</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'Soyuz Grotesk';
+            src: local('Soyuz Grotesk'), local('Arial');
+            font-weight: 700;
+        }
+        @font-face {
+            font-family: 'Arkhit';
+            src: local('Arkhit'), local('Inter'), local('Arial');
+            font-weight: 400;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arkhit', 'Inter', Arial, sans-serif;
+            background-color: #3B3B3B;
+            color: #FCFAFA;
+            font-size: 18px;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        h1 {
+            font-family: 'Soyuz Grotesk', Arial, sans-serif;
+            color: #ECCACB;
+            font-size: 40px;
+            margin-bottom: 30px;
+            line-height: 1.2;
+        }
+        h2 {
+            font-family: 'Soyuz Grotesk', Arial, sans-serif;
+            color: #ECCACB;
+            font-size: 32px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        h3 {
+            font-family: 'Soyuz Grotesk', Arial, sans-serif;
+            color: #ECCACB;
+            font-size: 24px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .btn-home {
+            display: inline-block;
+            background-color: #ECCACB;
+            color: #3B3B3B;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 30px;
+            transition: opacity 0.2s;
+        }
+        .btn-home:hover {
+            opacity: 0.8;
+        }
+        .step {
+            background-color: rgba(255,255,255,0.05);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 15px 0;
+            border-left: 3px solid #ECCACB;
+        }
+        .step-number {
+            color: #ECCACB;
+            font-weight: 700;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .checklist {
+            background-color: rgba(255,255,255,0.05);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+        .checklist-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+        .checkbox {
+            width: 18px;
+            height: 18px;
+            border: 2px solid #ECCACB;
+            border-radius: 4px;
+            flex-shrink: 0;
+            margin-top: 3px;
+        }
+        .screenshot {
+            max-width: 320px;
+            width: 100%;
+            border-radius: 12px;
+            margin: 15px 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        .screenshots-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 28px; }
+            h2 { font-size: 24px; }
+            body { font-size: 16px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Безопасность ВКонтакте</h1>
+
+        <h2>О системе безопасности VK:</h2>
+        <p>VK использует комплексную многоуровневую систему защиты: технические средства шифрования, поведенческие механизмы, мониторинг активности и защиту от ботов, спама, фрода и DDoS-атак.</p>
+
+        <h3>Ключевые элементы защиты:</h3>
+        <ul>
+            <li>Беспарольный вход (OnePass) — вход по одноразовым кодам</li>
+            <li>Двухфакторная аутентификация (2FA)</li>
+            <li>Биометрическая аутентификация (Face ID/Touch ID)</li>
+            <li>Электронный ключ, хранящийся локально</li>
+            <li>Мониторинг истории входов и подключённых устройств</li>
+        </ul>
+
+        <h2>Пошаговая инструкция: Как защитить аккаунт</h2>
+
+        <div class="step">
+            <div class="step-number">Шаг 1. Перейдите на беспарольный вход (рекомендуется)</div>
+            <ol>
+                <li>Откройте приложение ВКонтакте</li>
+                <li>Настройки → Управление аккаунтом VK ID → Безопасность</li>
+                <li>В блоке «Способы входа» выберите «Вход по одноразовым кодам»</li>
+                <li>Выберите способ получения: SMS, push-уведомления, звонок-сброс или приложение-генератор</li>
+            </ol>
+        </div>
+
+        <div class="step">
+            <div class="step-number">Шаг 2. Подключите двухфакторную аутентификацию</div>
+            <ul>
+                <li>Вариант А: Подтверждение по SMS</li>
+                <li>Вариант Б: Приложение-генератор кодов (Google Authenticator, Яндекс.Ключ и др.)</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <div class="step-number">Шаг 3. Активируйте биометрический вход (OnePass)</div>
+            <p>Личный кабинет VK ID → Безопасность и вход → Вход по скану лица или отпечатку пальца</p>
+        </div>
+
+        <div class="step">
+            <div class="step-number">Шаг 4. Проверьте активность аккаунта</div>
+            <p>Безопасность → Устройства и активность → История активности. Удалите незнакомые устройства.</p>
+        </div>
+
+        <div class="step">
+            <div class="step-number">Шаг 5. Проверьте подключённые сервисы</div>
+            <p>В личном кабинете VK ID отключите все ненужные и подозрительные приложения</p>
+        </div>
+
+        <div class="step">
+            <div class="step-number">Шаг 6. Обновите данные профиля</div>
+            <p>Актуальный номер телефона, действующий email, реальные имя и фамилия, актуальные фотографии</p>
+        </div>
+
+        <h2>Индивидуальный чек-лист приватности:</h2>
+        <div class="checklist">
+            <div class="checklist-item"><div class="checkbox"></div><div>Скрыть точное время посещения: Настройки → Приватность → Кто видит, что я онлайн → «Только я»</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Закрытый профиль: Настройки → Приватность → Закрытый профиль</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Ограничить письма от незнакомцев</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Проверить список активных сеансов</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Не устанавливать сторонние приложения для «накрутки»</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Раз в месяц: проверять историю активности, подключённые сервисы, актуальность привязанного телефона и почты, обновлять приложение и антивирус</div></div>
+        </div>
+
+        <div class="screenshots-row">
+            <img src="https://via.placeholder.com/320x568/4a4a4a/ECCACB?text=VK+Screenshot+1" alt="VK Screenshot 1" class="screenshot">
+            <img src="https://via.placeholder.com/320x568/4a4a4a/ECCACB?text=VK+Screenshot+2" alt="VK Screenshot 2" class="screenshot">
+            <img src="https://via.placeholder.com/320x568/4a4a4a/ECCACB?text=VK+Screenshot+3" alt="VK Screenshot 3" class="screenshot">
+        </div>
+
+        <a href="index.html" class="btn-home">← На главную</a>
+    </div>
+</body>
+</html>

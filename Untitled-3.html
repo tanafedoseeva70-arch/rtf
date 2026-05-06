@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Взломали аккаунт. Что делать?</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'Soyuz Grotesk';
+            src: local('Soyuz Grotesk'), local('Arial');
+            font-weight: 700;
+        }
+        @font-face {
+            font-family: 'Arkhit';
+            src: local('Arkhit'), local('Inter'), local('Arial');
+            font-weight: 400;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arkhit', 'Inter', Arial, sans-serif;
+            background-color: #3B3B3B;
+            color: #FCFAFA;
+            font-size: 18px;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        h1 {
+            font-family: 'Soyuz Grotesk', Arial, sans-serif;
+            color: #ECCACB;
+            font-size: 40px;
+            margin-bottom: 30px;
+            line-height: 1.2;
+        }
+        h2 {
+            font-family: 'Soyuz Grotesk', Arial, sans-serif;
+            color: #ECCACB;
+            font-size: 32px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .btn-home {
+            display: inline-block;
+            background-color: #ECCACB;
+            color: #3B3B3B;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 30px;
+            transition: opacity 0.2s;
+        }
+        .btn-home:hover {
+            opacity: 0.8;
+        }
+        .step {
+            background-color: rgba(255,255,255,0.05);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 15px 0;
+            border-left: 3px solid #ECCACB;
+        }
+        .step-number {
+            color: #ECCACB;
+            font-weight: 700;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .checklist {
+            background-color: rgba(255,255,255,0.05);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+        .checklist-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+        .checkbox {
+            width: 18px;
+            height: 18px;
+            border: 2px solid #ECCACB;
+            border-radius: 4px;
+            flex-shrink: 0;
+            margin-top: 3px;
+        }
+        a {
+            color: #ECCACB;
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 28px; }
+            h2 { font-size: 24px; }
+            body { font-size: 16px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Экстренное восстановление доступа</h1>
+
+        <div class="step">
+            <div class="step-number">Шаг 1. Проверьте, действительно ли это взлом</div>
+            <p>Если не можете войти — попробуйте восстановить пароль через «Забыли пароль?». Если почта или телефон привязаны к чужим номерам — взлом подтверждён.</p>
+        </div>
+
+        <div class="step">
+            <div class="step-number">Шаг 2. Восстановите доступ</div>
+            <ul>
+                <li><strong>VK:</strong> <a href="https://vk.com/restore" target="_blank">vk.com/restore</a> — укажите ссылку на профиль, старый телефон/почту, отвечайте на вопросы службы поддержки.</li>
+                <li><strong>MAX:</strong> восстановление идёт через общий аккаунт VK. Если взломан VK — MAX восстанавливается автоматически.</li>
+                <li><strong>TikTok:</strong> в приложении «Нет доступа?» → подтвердите личность через привязанный телефон или почту. Если злоумышленник сменил привязки — пишите в поддержку через форму обратной связи.</li>
+                <li><strong>Telegram:</strong> Settings → Devices → Terminate All Other Sessions. Если не можете войти — переустановите приложение, введите номер телефона, дождитесь СМС. Если СМС не приходит — обратитесь к оператору связи (возможна SIM-swap атака).</li>
+            </ul>
+        </div>
+
+        <h2>Чек-лист после восстановления:</h2>
+        <div class="checklist">
+            <div class="checklist-item"><div class="checkbox"></div><div><strong>Смена паролей.</strong> Придумайте уникальный пароль из 12+ символов. Обновите пароль от привязанной почты и от телефона/оператора связи.</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div><strong>Завершение сеансов.</strong> Завершите все сессии на других устройствах во всех соцсетях.</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div><strong>Проверьте привязки.</strong> Убедитесь, что почта и телефон принадлежат вам. Удалите чужие устройства и подозрительные приложения с доступом.</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div><strong>Включите 2FA.</strong> Добавьте двухфакторную аутентификацию везде, где это возможно.</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div><strong>Обратитесь в поддержку.</strong> Сообщите платформе о взломе через официальные каналы.</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div><strong>Проверьте активность.</strong> Просмотрите последние действия: сообщения, публикации, платежи. Удалите всё, что сделал злоумышленник. Предупредите друзей о компрометации аккаунта.</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div><strong>Дополнительные меры.</strong> Просканируйте устройство антивирусом. Не вводите пароли на чужих компьютерах. Будьте осторожны с фишинговыми ссылками.</div></div>
+        </div>
+
+        <h2>Если не удалось восстановить доступ самостоятельно:</h2>
+        <ul>
+            <li><strong>Для VK и MAX:</strong> подготовьте скан паспорта, старые фото профиля, дату регистрации.</li>
+            <li><strong>Для TikTok:</strong> сохраните ссылки на видео, никнейм, примерную дату регистрации.</li>
+            <li><strong>Для Telegram:</strong> если SIM-карта украдена — сначала заблокируйте её у оператора, затем обращайтесь в поддержку Telegram.</li>
+        </ul>
+
+        <a href="index.html" class="btn-home">← На главную</a>
+    </div>
+</body>
+</html>

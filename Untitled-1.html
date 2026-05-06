@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цифровая безопасность: защити свои данные</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'Soyuz Grotesk';
+            src: local('Soyuz Grotesk'), local('Arial');
+            font-weight: 700;
+        }
+        @font-face {
+            font-family: 'Arkhit';
+            src: local('Arkhit'), local('Inter'), local('Arial');
+            font-weight: 400;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arkhit', 'Inter', Arial, sans-serif;
+            background-color: #3B3B3B;
+            color: #FCFAFA;
+            font-size: 18px;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        h1 {
+            font-family: 'Soyuz Grotesk', Arial, sans-serif;
+            color: #ECCACB;
+            font-size: 40px;
+            margin-bottom: 30px;
+            line-height: 1.2;
+        }
+        h2 {
+            font-family: 'Soyuz Grotesk', Arial, sans-serif;
+            color: #ECCACB;
+            font-size: 32px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        h3 {
+            font-family: 'Soyuz Grotesk', Arial, sans-serif;
+            color: #ECCACB;
+            font-size: 24px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .nav-icons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin: 30px 0;
+        }
+        .nav-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 10px;
+            transition: transform 0.2s, opacity 0.2s;
+            cursor: pointer;
+            object-fit: contain;
+        }
+        .nav-icon:hover {
+            transform: scale(1.1);
+            opacity: 0.8;
+        }
+        .nav-link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: #FCFAFA;
+            font-size: 12px;
+            gap: 5px;
+        }
+        .btn-home {
+            display: inline-block;
+            background-color: #ECCACB;
+            color: #3B3B3B;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 30px;
+            transition: opacity 0.2s;
+        }
+        .btn-home:hover {
+            opacity: 0.8;
+        }
+        .screenshot {
+            max-width: 320px;
+            width: 100%;
+            border-radius: 12px;
+            margin: 15px 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        .screenshots-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .warning-box {
+            background-color: rgba(236, 202, 203, 0.1);
+            border-left: 4px solid #ECCACB;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .checklist {
+            background-color: rgba(255,255,255,0.05);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+        .checklist-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+        .checkbox {
+            width: 18px;
+            height: 18px;
+            border: 2px solid #ECCACB;
+            border-radius: 4px;
+            flex-shrink: 0;
+            margin-top: 3px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: rgba(255,255,255,0.05);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        th {
+            background-color: rgba(236, 202, 203, 0.2);
+            color: #ECCACB;
+            font-weight: 600;
+        }
+        tr:hover {
+            background-color: rgba(255,255,255,0.05);
+        }
+        .faq-item {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .faq-question {
+            font-weight: 600;
+            color: #ECCACB;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        a {
+            color: #ECCACB;
+            text-decoration: underline;
+        }
+        .source-link {
+            display: block;
+            margin-bottom: 8px;
+        }
+        .hero-section {
+            text-align: center;
+            padding: 40px 0;
+        }
+        .hero-icon {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
+        }
+        .step {
+            background-color: rgba(255,255,255,0.05);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 15px 0;
+            border-left: 3px solid #ECCACB;
+        }
+        .step-number {
+            color: #ECCACB;
+            font-weight: 700;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 28px; }
+            h2 { font-size: 24px; }
+            body { font-size: 16px; }
+            .nav-icons { gap: 15px; }
+            .nav-icon { width: 36px; height: 36px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero-section">
+            <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" alt="Security" class="hero-icon">
+            <h1>Цифровая безопасность: защити свои данные</h1>
+            <p>Добро пожаловать на ресурс, посвящённый защите личных данных в социальных сетях. Здесь вы найдёте пошаговые инструкции, чек-листы и актуальные рекомендации по кибербезопасности для популярных платформ.</p>
+        </div>
+
+        <h2>Как пользоваться сайтом:</h2>
+        <ul>
+            <li>Выберите социальную сеть из списка ниже, чтобы получить индивидуальную инструкцию по защите аккаунта</li>
+            <li>Перейдите в раздел «Взломали аккаунт», если срочно нужно восстановить доступ</li>
+            <li>Используйте чек-листы для регулярного аудита безопасности</li>
+            <li>Загляните в Q&A, чтобы найти ответы на частые вопросы</li>
+        </ul>
+
+        <div class="warning-box">
+            <h3>⚠️ Взломали аккаунт. Что делать?</h3>
+            <p>Если ваш аккаунт был взломан — действуйте немедленно! Перейдите на страницу экстренного восстановления доступа.</p>
+            <a href="hacked.html" class="btn-home">Экстренное восстановление →</a>
+        </div>
+
+        <h2>Почему важно защищать персональные данные:</h2>
+        <p>Ваши аккаунты — это не просто профили. Это доступ к личной переписке, фотографиям, контактам, иногда — к банковским картам и рабочим чатам. Утечка данных может привести к шантажу, краже денег, распространению ложной информации от вашего имени.</p>
+
+        <h2>Иконки-навигация:</h2>
+        <div class="nav-icons">
+            <a href="vk.html" class="nav-link">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/VK.com-logo.svg/1200px-VK.com-logo.svg.png" alt="VK" class="nav-icon">
+                <span>VK</span>
+            </a>
+            <a href="max.html" class="nav-link">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_MAX.svg/250px-%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_MAX.svg.png" alt="MAX" class="nav-icon">
+                <span>MAX</span>
+            </a>
+            <a href="telegram.html" class="nav-link">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/1200px-Telegram_logo.svg.png" alt="Telegram" class="nav-icon">
+                <span>Telegram</span>
+            </a>
+            <a href="tiktok.html" class="nav-link">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Tiktok_icon.svg/500px-Tiktok_icon.svg.png" alt="TikTok" class="nav-icon">
+                <span>TikTok</span>
+            </a>
+            <a href="checklists.html" class="nav-link">
+                <img src="https://cdn-icons-png.flaticon.com/512/2098/2098402.png" alt="Чек-листы" class="nav-icon">
+                <span>Чек-листы</span>
+            </a>
+            <a href="qa.html" class="nav-link">
+                <img src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png" alt="Q&A" class="nav-icon">
+                <span>Q&A</span>
+            </a>
+            <a href="sources.html" class="nav-link">
+                <img src="https://cdn-icons-png.flaticon.com/512/2909/2909796.png" alt="Источники" class="nav-icon">
+                <span>Источники</span>
+            </a>
+        </div>
+
+        <h2>Разделы сайта:</h2>
+        <div class="nav-icons">
+            <a href="general.html" class="nav-link">
+                <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" alt="Общие принципы" class="nav-icon">
+                <span>Общие принципы</span>
+            </a>
+            <a href="hacked.html" class="nav-link">
+                <img src="https://cdn-icons-png.flaticon.com/512/564/564619.png" alt="Взлом" class="nav-icon">
+                <span>Взломали аккаунт</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

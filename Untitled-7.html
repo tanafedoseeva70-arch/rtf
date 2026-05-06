@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Безопасность TikTok</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'Soyuz Grotesk';
+            src: local('Soyuz Grotesk'), local('Arial');
+            font-weight: 700;
+        }
+        @font-face {
+            font-family: 'Arkhit';
+            src: local('Arkhit'), local('Inter'), local('Arial');
+            font-weight: 400;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arkhit', 'Inter', Arial, sans-serif;
+            background-color: #3B3B3B;
+            color: #FCFAFA;
+            font-size: 18px;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        h1 {
+            font-family: 'Soyuz Grotesk', Arial, sans-serif;
+            color: #ECCACB;
+            font-size: 40px;
+            margin-bottom: 30px;
+            line-height: 1.2;
+        }
+        h2 {
+            font-family: 'Soyuz Grotesk', Arial, sans-serif;
+            color: #ECCACB;
+            font-size: 32px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        h3 {
+            font-family: 'Soyuz Grotesk', Arial, sans-serif;
+            color: #ECCACB;
+            font-size: 24px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .btn-home {
+            display: inline-block;
+            background-color: #ECCACB;
+            color: #3B3B3B;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 30px;
+            transition: opacity 0.2s;
+        }
+        .btn-home:hover {
+            opacity: 0.8;
+        }
+        .step {
+            background-color: rgba(255,255,255,0.05);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 15px 0;
+            border-left: 3px solid #ECCACB;
+        }
+        .step-number {
+            color: #ECCACB;
+            font-weight: 700;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .checklist {
+            background-color: rgba(255,255,255,0.05);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+        .checklist-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+        .checkbox {
+            width: 18px;
+            height: 18px;
+            border: 2px solid #ECCACB;
+            border-radius: 4px;
+            flex-shrink: 0;
+            margin-top: 3px;
+        }
+        .screenshot {
+            max-width: 320px;
+            width: 100%;
+            border-radius: 12px;
+            margin: 15px 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        .screenshots-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 28px; }
+            h2 { font-size: 24px; }
+            body { font-size: 16px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Безопасность TikTok</h1>
+
+        <h2>О системе безопасности TikTok:</h2>
+        <p>TikTok использует многоуровневую систему защиты с техническими средствами и поведенческими механизмами. Встроенная функция «Проверка безопасности» помогает усилить защиту аккаунта пошагово.</p>
+
+        <h3>Ключевые элементы защиты:</h3>
+        <ul>
+            <li>Проверка безопасности (встроенная функция)</li>
+            <li>Двухэтапная верификация</li>
+            <li>Ключи входа (Passkeys) через Face ID/Touch ID</li>
+            <li>Управление доверенными устройствами</li>
+            <li>Мониторинг активности за 30 дней</li>
+        </ul>
+
+        <h2>Пошаговая инструкция: Как защитить аккаунт</h2>
+
+        <div class="step">
+            <div class="step-number">Шаг 1. Выполните «Проверку безопасности»</div>
+            <ol>
+                <li>Профиль → Меню (☰) → Настройки и конфиденциальность → Безопасность и разрешения → Проверка безопасности</li>
+                <li>Выполните все шаги: привяжите телефон и email, включите 2FA, проверьте устройства, просмотрите активность, добавьте ключ входа</li>
+            </ol>
+        </div>
+
+        <div class="step">
+            <div class="step-number">Шаг 2. Привяжите номер телефона и email</div>
+            <p>Рекомендуется привязать два способа связи для альтернативного восстановления</p>
+        </div>
+
+        <div class="step">
+            <div class="step-number">Шаг 3. Создайте надёжный пароль</div>
+            <ul>
+                <li>12–15 символов, буквы разного регистра, цифры, символы</li>
+                <li>Регулярно меняйте (каждые 30 дней)</li>
+                <li>Не используйте персональные данные</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <div class="step-number">Шаг 4. Включите двухэтапную верификацию</div>
+            <p>Профиль → Меню → Настройки и конфиденциальность → Безопасность → Двухэтапная верификация. Выберите минимум 2 способа: SMS, email, пароль.</p>
+        </div>
+
+        <div class="step">
+            <div class="step-number">Шаг 5. Настройте ключ входа (Passkey)</div>
+            <p>Профиль → Меню → Настройки → Безопасность → Ключ входа. Используйте биометрию устройства.</p>
+        </div>
+
+        <div class="step">
+            <div class="step-number">Шаг 6. Проверьте и очистите доверенные устройства</div>
+            <p>Профиль → Меню → Настройки → Безопасность → Управление устройствами. Удалите незнакомые устройства, при обнаружении чужих — срочно смените пароль.</p>
+        </div>
+
+        <div class="step">
+            <div class="step-number">Шаг 7. Отключите сохранение логина (опционально)</div>
+            <p>Профиль → Меню → Безопасность → отключите «Сохранить логин и пароль»</p>
+        </div>
+
+        <h2>Индивидуальный чек-лист приватности:</h2>
+        <div class="checklist">
+            <div class="checklist-item"><div class="checkbox"></div><div>Проверка безопасности выполнена (все шаги с галочками)</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Привязаны телефон и email</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Пароль надёжный, 2FA включена (минимум 2 способа)</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Ключ входа настроен через биометрию</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Доверенные устройства проверены и очищены</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Приватный аккаунт включён (при необходимости)</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Скачивание видео отключено, дуэты и сшивание ограничены</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Комментарии фильтруются от спама, добавлены стоп-слова</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Личные сообщения ограничены, звонки ограничены</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Раз в месяц: проверка устройств, просмотр активности, обновление приложения, смена пароля</div></div>
+        </div>
+
+        <h3>Дополнительно:</h3>
+        <ul>
+            <li>Не используйте сервисы для «накрутки»</li>
+            <li>Не переходите по подозрительным ссылкам</li>
+            <li>Будьте осторожны с фейковыми розыгрышами</li>
+            <li>TikTok никогда не просит пароль в личных сообщениях</li>
+        </ul>
+
+        <div class="screenshots-row">
+            <img src="https://via.placeholder.com/320x568/4a4a4a/ECCACB?text=TikTok+Screenshot+1" alt="TikTok Screenshot" class="screenshot">
+        </div>
+
+        <a href="index.html" class="btn-home">← На главную</a>
+    </div>
+</body>
+</html>

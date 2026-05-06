@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Общие принципы безопасности</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'Soyuz Grotesk';
+            src: local('Soyuz Grotesk'), local('Arial');
+            font-weight: 700;
+        }
+        @font-face {
+            font-family: 'Arkhit';
+            src: local('Arkhit'), local('Inter'), local('Arial');
+            font-weight: 400;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arkhit', 'Inter', Arial, sans-serif;
+            background-color: #3B3B3B;
+            color: #FCFAFA;
+            font-size: 18px;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        h1 {
+            font-family: 'Soyuz Grotesk', Arial, sans-serif;
+            color: #ECCACB;
+            font-size: 40px;
+            margin-bottom: 30px;
+            line-height: 1.2;
+        }
+        h2 {
+            font-family: 'Soyuz Grotesk', Arial, sans-serif;
+            color: #ECCACB;
+            font-size: 32px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        h3 {
+            font-family: 'Soyuz Grotesk', Arial, sans-serif;
+            color: #ECCACB;
+            font-size: 24px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .btn-home {
+            display: inline-block;
+            background-color: #ECCACB;
+            color: #3B3B3B;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 30px;
+            transition: opacity 0.2s;
+        }
+        .btn-home:hover {
+            opacity: 0.8;
+        }
+        .step {
+            background-color: rgba(255,255,255,0.05);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 15px 0;
+            border-left: 3px solid #ECCACB;
+        }
+        .step-number {
+            color: #ECCACB;
+            font-weight: 700;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 28px; }
+            h2 { font-size: 24px; }
+            body { font-size: 16px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Общие принципы безопасности</h1>
+
+        <h2>О защите личных данных в цифровой среде:</h2>
+        <p>Каждая социальная сеть — это отдельная экосистема со своими настройками, но базовые принципы защиты универсальны. Понимание этих принципов поможет вам минимизировать риски на любой платформе.</p>
+
+        <h2>Общие правила для всех платформ:</h2>
+
+        <div class="step">
+            <div class="step-number">1. Уникальные пароли</div>
+            <p>Не используйте один пароль для нескольких сервисов. Если одна база данных утекает, остальные аккаунты останутся в безопасности.</p>
+        </div>
+
+        <div class="step">
+            <div class="step-number">2. Двухфакторная аутентификация (2FA)</div>
+            <p>Включайте её везде, где возможно. Это самый эффективный способ защитить аккаунт даже при утечке пароля.</p>
+        </div>
+
+        <div class="step">
+            <div class="step-number">3. Контроль активных сеансов</div>
+            <p>Регулярно проверяйте, с каких устройств открыт ваш аккаунт. Завершайте сеансы на устройствах, которые вам не принадлежат.</p>
+        </div>
+
+        <div class="step">
+            <div class="step-number">4. Осторожность с подозрительными ссылками</div>
+            <p>Не переходите по сокращённым ссылкам, не скачивайте файлы от незнакомцев, не вводите данные на поддельных сайтах.</p>
+        </div>
+
+        <div class="step">
+            <div class="step-number">5. Привязка актуальных контактов</div>
+            <p>Убедитесь, что к аккаунту привязан ваш текущий номер телефона и email — без них восстановление доступа будет сложным.</p>
+        </div>
+
+        <div class="step">
+            <div class="step-number">6. Регулярные проверки</div>
+            <p>Раз в месяц проходите по чек-листу безопасности: смена паролей, проверка устройств, обновление приложений.</p>
+        </div>
+
+        <a href="index.html" class="btn-home">← На главную</a>
+    </div>
+</body>
+</html>

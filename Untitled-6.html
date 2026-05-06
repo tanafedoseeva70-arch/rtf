@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Безопасность Telegram</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'Soyuz Grotesk';
+            src: local('Soyuz Grotesk'), local('Arial');
+            font-weight: 700;
+        }
+        @font-face {
+            font-family: 'Arkhit';
+            src: local('Arkhit'), local('Inter'), local('Arial');
+            font-weight: 400;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arkhit', 'Inter', Arial, sans-serif;
+            background-color: #3B3B3B;
+            color: #FCFAFA;
+            font-size: 18px;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        h1 {
+            font-family: 'Soyuz Grotesk', Arial, sans-serif;
+            color: #ECCACB;
+            font-size: 40px;
+            margin-bottom: 30px;
+            line-height: 1.2;
+        }
+        h2 {
+            font-family: 'Soyuz Grotesk', Arial, sans-serif;
+            color: #ECCACB;
+            font-size: 32px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        h3 {
+            font-family: 'Soyuz Grotesk', Arial, sans-serif;
+            color: #ECCACB;
+            font-size: 24px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .btn-home {
+            display: inline-block;
+            background-color: #ECCACB;
+            color: #3B3B3B;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 30px;
+            transition: opacity 0.2s;
+        }
+        .btn-home:hover {
+            opacity: 0.8;
+        }
+        .step {
+            background-color: rgba(255,255,255,0.05);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 15px 0;
+            border-left: 3px solid #ECCACB;
+        }
+        .step-number {
+            color: #ECCACB;
+            font-weight: 700;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .checklist {
+            background-color: rgba(255,255,255,0.05);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+        .checklist-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+        .checkbox {
+            width: 18px;
+            height: 18px;
+            border: 2px solid #ECCACB;
+            border-radius: 4px;
+            flex-shrink: 0;
+            margin-top: 3px;
+        }
+        .screenshot {
+            max-width: 320px;
+            width: 100%;
+            border-radius: 12px;
+            margin: 15px 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        .screenshots-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 28px; }
+            h2 { font-size: 24px; }
+            body { font-size: 16px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Безопасность Telegram</h1>
+
+        <h2>О системе безопасности Telegram:</h2>
+        <p>Telegram — один из самых популярных мессенджеров в России, используемый для личного общения, работы и получения новостей. Мессенджер часто взламывают с целью выкупа или шантажа, поэтому защита аккаунта критически важна.</p>
+
+        <h3>Ключевые принципы безопасности:</h3>
+        <ul>
+            <li>Двухэтапная аутентификация (Облачный пароль)</li>
+            <li>Скрытие номера телефона</li>
+            <li>Мониторинг активных устройств с указанием города и времени</li>
+            <li>Шифрование данных и секретные чаты с end-to-end шифрованием</li>
+        </ul>
+
+        <h2>Пошаговая инструкция: Как защитить аккаунт</h2>
+
+        <div class="step">
+            <div class="step-number">Шаг 1. Включите двухэтапную аутентификацию (Облачный пароль)</div>
+            <ol>
+                <li>Android: Telegram → ≡ → Настройки → Конфиденциальность и безопасность → Двухэтапная проверка</li>
+                <li>iPhone: Настройки → Конфиденциальность → Облачный пароль</li>
+                <li>Установите пароль (минимум 12 символов), добавьте подсказку, укажите email для восстановления</li>
+                <li>Сохраните резервный код в надёжном месте</li>
+            </ol>
+        </div>
+
+        <div class="step">
+            <div class="step-number">Шаг 2. Скройте номер телефона</div>
+            <ul>
+                <li>Настройки → Конфиденциальность → Номер телефона → «Кто может видеть» — «Никто»</li>
+                <li>«Кто может найти меня по номеру» — «Мои контакты» или «Никто»</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <div class="step-number">Шаг 3. Проверьте активные сеансы</div>
+            <p>Настройки → Конфиденциальность → Устройства. Удалите все незнакомые устройства, завершите лишние сеансы.</p>
+        </div>
+
+        <div class="step">
+            <div class="step-number">Шаг 4. Настройте приватность профиля</div>
+            <ul>
+                <li>Скрыть фото профиля: «Мои контакты»</li>
+                <li>Скрыть статус онлайн: «Никто»</li>
+                <li>Отключить пересылку сообщений с ссылкой на аккаунт</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <div class="step-number">Шаг 5. Ограничите добавление в группы и каналы</div>
+            <p>Настройки → Конфиденциальность → Группы и каналы → «Мои контакты» или «Никто»</p>
+        </div>
+
+        <div class="step">
+            <div class="step-number">Шаг 6. Настройте звонки</div>
+            <ul>
+                <li>Настройки → Конфиденциальность → Звонки → «Мои контакты» или «Никто»</li>
+                <li>Отключите Peer-to-Peer для скрытия IP-адреса</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <div class="step-number">Шаг 7. Отключите синхронизацию контактов (опционально)</div>
+            <p>Настройки → Конфиденциальность → Синхронизация контактов — выключить</p>
+        </div>
+
+        <h2>Индивидуальный чек-лист приватности:</h2>
+        <div class="checklist">
+            <div class="checklist-item"><div class="checkbox"></div><div>Облачный пароль установлен, резервный email указан, резервный код сохранён</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Номер телефона скрыт, поиск по номеру ограничен</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Активные сеансы проверены и очищены</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Последняя активность скрыта, фото профиля доступно только контактам</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Пересылка сообщений не создаёт ссылку на аккаунт</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Звонки ограничены, Peer-to-Peer отключён</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Добавление в группы ограничено</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Раз в месяц: проверка сеансов, обновление приложения, проверка настроек приватности</div></div>
+        </div>
+
+        <h3>Дополнительно:</h3>
+        <ul>
+            <li>Не покупайте аккаунты с рук</li>
+            <li>Не используйте подозрительных ботов</li>
+            <li>Не авторизуйтесь на неизвестных сайтах через Telegram</li>
+            <li>Используйте секретные чаты для важной переписки</li>
+            <li>Никому не сообщайте коды из SMS</li>
+        </ul>
+
+        <div class="screenshots-row">
+            <img src="https://via.placeholder.com/320x568/4a4a4a/ECCACB?text=Telegram+Screenshot+1" alt="Telegram Screenshot" class="screenshot">
+        </div>
+
+        <a href="index.html" class="btn-home">← На главную</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сборник чек-листов безопасности</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        @font-face { font-family: 'Soyuz Grotesk'; src: local('Soyuz Grotesk'), local('Arial'); font-weight: 700; }
+        @font-face { font-family: 'Arkhit'; src: local('Arkhit'), local('Inter'), local('Arial'); font-weight: 400; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Arkhit', 'Inter', Arial, sans-serif; background-color: #3B3B3B; color: #FCFAFA; font-size: 18px; line-height: 1.6; min-height: 100vh; }
+        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        h1 { font-family: 'Soyuz Grotesk', Arial, sans-serif; color: #ECCACB; font-size: 40px; margin-bottom: 30px; line-height: 1.2; }
+        h2 { font-family: 'Soyuz Grotesk', Arial, sans-serif; color: #ECCACB; font-size: 32px; margin-top: 30px; margin-bottom: 20px; }
+        h3 { font-family: 'Soyuz Grotesk', Arial, sans-serif; color: #ECCACB; font-size: 24px; margin-top: 25px; margin-bottom: 15px; }
+        p { margin-bottom: 15px; }
+        ul, ol { margin-left: 20px; margin-bottom: 20px; }
+        li { margin-bottom: 10px; }
+        .btn-home { display: inline-block; background-color: #ECCACB; color: #3B3B3B; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; margin-top: 30px; transition: opacity 0.2s; }
+        .btn-home:hover { opacity: 0.8; }
+        .checklist { background-color: rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; margin: 20px 0; }
+        .checklist-item { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 12px; }
+        .checkbox { width: 18px; height: 18px; border: 2px solid #ECCACB; border-radius: 4px; flex-shrink: 0; margin-top: 3px; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; background-color: rgba(255,255,255,0.05); border-radius: 8px; overflow: hidden; }
+        th, td { padding: 12px 15px; text-align: left; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        th { background-color: rgba(236, 202, 203, 0.2); color: #ECCACB; font-weight: 600; }
+        tr:hover { background-color: rgba(255,255,255,0.05); }
+        @media (max-width: 600px) { h1 { font-size: 28px; } h2 { font-size: 24px; } body { font-size: 16px; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Сборник чек-листов безопасности</h1>
+
+        <h2>Общий чек-лист «Быстрый аудит» (для всех платформ):</h2>
+        <table>
+            <tr>
+                <th>№</th>
+                <th>Проверка</th>
+                <th>Статус</th>
+            </tr>
+            <tr><td>1</td><td>Пароль уникальный (не используется на других сайтах)</td><td>☐</td></tr>
+            <tr><td>2</td><td>Двухфакторная аутентификация (2FA) включена</td><td>☐</td></tr>
+            <tr><td>3</td><td>Привязан актуальный номер телефона и резервный email</td><td>☐</td></tr>
+            <tr><td>4</td><td>Просмотрен список активных сессий — нет посторонних</td><td>☐</td></tr>
+            <tr><td>5</td><td>Отключены неиспользуемые сторонние приложения и боты</td><td>☐</td></tr>
+            <tr><td>6</td><td>Настроены уведомления о входах с новых устройств</td><td>☐</td></tr>
+            <tr><td>7</td><td>Резервные коды восстановления сохранены в надёжном месте</td><td>☐</td></tr>
+        </table>
+
+        <h2>Чек-лист ВКонтакте:</h2>
+        <div class="checklist">
+            <h3>Базовая защита:</h3>
+            <div class="checklist-item"><div class="checkbox"></div><div>Пароль: минимум 12 символов, буквы разного регистра, цифры, спецсимволы</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Двухфакторная аутентификация включена (приложение-аутентификатор рекомендуется)</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Беспарольный вход настроен, резервные коды сохранены</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Email привязан и подтверждён</div></div>
+            
+            <h3>Контроль доступа:</h3>
+            <div class="checklist-item"><div class="checkbox"></div><div>История активности проверена, все устройства узнаваемы</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Лишние сессии завершены</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Сторонние приложения отключены</div></div>
+            
+            <h3>Приватность:</h3>
+            <div class="checklist-item"><div class="checkbox"></div><div>Номер телефона скрыт ото всех, кроме друзей</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Профиль закрыт от поисковых систем</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Личные сообщения ограничены</div></div>
+            
+            <h3>Защита от мошенничества:</h3>
+            <div class="checklist-item"><div class="checkbox"></div><div>Не переходите по подозрительным ссылкам</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Никогда не сообщайте коды из SMS</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Проверяйте адрес сайта: только vk.com или vk.ru</div></div>
+        </div>
+
+        <h2>Чек-лист Telegram:</h2>
+        <div class="checklist">
+            <h3>Базовая защита:</h3>
+            <div class="checklist-item"><div class="checkbox"></div><div>Облачный пароль (2FA) установлен</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Резервный email указан, резервный код сохранён</div></div>
+            
+            <h3>Контроль сессий:</h3>
+            <div class="checklist-item"><div class="checkbox"></div><div>Активные сеансы проверены и очищены</div></div>
+            
+            <h3>Приватность:</h3>
+            <div class="checklist-item"><div class="checkbox"></div><div>Номер телефона скрыт</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Последняя активность ограничена</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Пересылка сообщений ограничена</div></div>
+            
+            <h3>Защита переписки:</h3>
+            <div class="checklist-item"><div class="checkbox"></div><div>Секретные чаты используются для важной переписки</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Таймер автоудаления настроен</div></div>
+        </div>
+
+        <h2>Чек-лист MAX:</h2>
+        <div class="checklist">
+            <div class="checklist-item"><div class="checkbox"></div><div>Пароль VK ID сложный и уникальный</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Активные сеансы проверены</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Подозрительные сообщения блокируются</div></div>
+        </div>
+
+        <h2>Чек-лист TikTok:</h2>
+        <div class="checklist">
+            <div class="checklist-item"><div class="checkbox"></div><div>Проверка безопасности выполнена</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Двухэтапная верификация включена (минимум 2 способа)</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Ключ входа (Passkey) настроен</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Приватный аккаунт включён (при необходимости)</div></div>
+            <div class="checklist-item"><div class="checkbox"></div><div>Скачивание видео отключено</div></div>
+        </div>
+
+        <h2>Чек-лист «Что делать, если аккаунт взломали»:</h2>
+        <table>
+            <tr>
+                <th>Шаг</th>
+                <th>Действие</th>
+                <th>Срочность</th>
+            </tr>
+            <tr><td>1</td><td>Сменить пароль через официальное приложение/сайт</td><td>Немедленно</td></tr>
+            <tr><td>2</td><td>Завершить все активные сессии</td><td>Немедленно</td></tr>
+            <tr><td>3</td><td>Проверить привязанный email и телефон</td><td>10 минут</td></tr>
+            <tr><td>4</td><td>Отозвать доступ у сторонних приложений</td><td>30 минут</td></tr>
+            <tr><td>5</td><td>Включить 2FA</td><td>30 минут</td></tr>
+            <tr><td>6</td><td>Просканировать устройство на вирусы</td><td>1 час</td></tr>
+            <tr><td>7</td><td>Уведомить друзей о компрометации</td><td>1 час</td></tr>
+            <tr><td>8</td><td>Написать в официальную поддержку</td><td>24 часа</td></tr>
+            <tr><td>9</td><td>Проверить связанные аккаунты (почта, банки)</td><td>24 часа</td></tr>
+            <tr><td>10</td><td>Заявление в полицию при крупном ущербе</td><td>72 часа</td></tr>
+        </table>
+
+        <a href="index.html" class="btn-home">← На главную</a>
+    </div>
+</body>
+</html>
